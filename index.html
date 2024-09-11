@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sa3ed Ahmed">
+    <meta name="description" content="A Little shop for selling tasty tacos!">
+    <title>Taco Shop</title>
+
+    <!-- XX Fix -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Tip: any page should have ONLY one h1 element -->
+        <h1>Welcome to Our Little Taco Shop</h1>
+
+        <!-- Navigation Part -->
+        <!-- Notice: can put inside <header> -->
+        <nav>
+            <ul>
+                <li><a href="#about_id">About
+                        <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li><a href="#menu_id">Our Menu</a></li>
+                <li><a href="hours.html" target="_blank">Store Hours</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="img/tacos_and_drink_400x267.png" alt="tacos and drink" title="We love tacos!">
+            <figcaption>Tacos and a Drink</figcaption>
+        </figure>
+    </header>
+    <hr>
+
+    <main>
+        <!-- About Section -->
+        <article id="about_id">
+            <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
+
+            <!-- 
+                Why we use <time>?
+                So that browsers can offer to add date reminders through the user's calendar, 
+            and search engines can produce smarter search results.
+            -->
+            <P><abbr title="The Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our shop
+                was built from a <strong>love of tacos</strong> 🌮🌮🌮.
+                <br> We hope our shop adds a unique and interesting place to out little town.
+            </P>
+
+            <aside>
+                <h3>Taco Trivia</h3>
+                <details>
+                    <summary>When did tacos first appear in the US?</summary>
+                    <p>Bla Bla Bla</p>
+                </details>
+            </aside>
+        </article>
+        <hr>
+
+        <!-- Menu Section -->
+        <article id="menu_id">
+            <h2>Our Menu</h2>
+
+            <table border="1" cellspacing="1" cellpadding="5">
+                <caption>Our Tacos</caption>
+
+                <thead>
+                    <tr>
+                        <th>Tacos</th>
+                        <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                        <th scope="col">Price</th>
+                        <!-- scope: no visual effects, but useful for screen readers accessability -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Crunchy part -->
+                    <tr>
+                        <th scope="row" rowspan="3">
+                            Crunchy
+                        </th>
+                        <td>1</td>
+                        <td>$1.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$3.25</td>
+                    </tr>
+
+                    <!-- Soft part -->
+                     <!-- Notice: table headers can be rows, not just cols -->
+                    <tr>
+                        <th scope="row" rowspan="3">
+                            Soft
+                        </th>
+                        <td>1</td>
+                        <td>$2.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$4.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Chips &amp; Salsa $2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <br>
+
+        <!-- Tip: # is equivalent to the page top -->
+        <a href="#">Back to Top</a>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+</body>
+
+</html>

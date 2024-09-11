@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sa3ed Ahmed">
+    <meta name="description" content="Contact us for better experience in The Little Taco Shop">
+
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="#about_id">About
+                        <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li><a href="index.html#menu_id" target="_blank">Our Menu</a></li>
+                <li><a href="hours.html" target="_blank">Store Hours</a></li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="img/tacos_close_up_400x260.png" alt="Taco Picture">
+            <figcaption>Little Taco Shop Tacos</figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <!-- Form Section -->
+        <section>
+            <h2>Our Contact Form</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us A Message</legend>
+                    <div>
+                        <label for="name_id">Name:</label>
+                        <input name="name" id="name_id" type="text" placeholder="your name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email_id">Email:</label>
+                        <input required name="email" id="email_id" type="email" placeholder="your email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="message_id">Your Message:</label>
+                        <br>
+                        <textarea required name="message" id="message_id" placeholder="Type your message here" rows="10"
+                            cols="27"></textarea>
+                    </div>
+                </fieldset>
+                <br>
+
+                <!-- Tip: using <button> is better than using <input> submit, it's more semantically accurate and provide better accessability -->
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <!-- Location Section -->
+        <section>
+            <H2>Our Location</H2>
+            <address>
+                555 Taco Temptation Lane, Suite T
+                <br>Kansan City, MO 5555-5555
+                <br><br>
+                Phone: <a href="tel:+21060355869">+21060355869</a>
+            </address>
+        </section>
+        <br>
+
+        <a href="#">Back to Top</a>
+    </main>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+</body>
+
+</html>
